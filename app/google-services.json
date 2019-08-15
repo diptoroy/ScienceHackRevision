@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1055175257324",
+    "firebase_url": "https://science-hack.firebaseio.com",
+    "project_id": "science-hack",
+    "storage_bucket": "science-hack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055175257324:android:ccc1621d1dc10124",
+        "android_client_info": {
+          "package_name": "com.example.sciencehack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055175257324-bojtmu3300bt6isgtbgj34afbe09f6uf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sciencehack",
+            "certificate_hash": "ac063e029c28599e39137ca49ff8e52b79d2d685"
+          }
+        },
+        {
+          "client_id": "1055175257324-kkkgoi14rmhq3gl25ismtpig3hf5l7f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmmte5vLXN_sBe1hSrAHXYePlu0rIvJoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055175257324-kkkgoi14rmhq3gl25ismtpig3hf5l7f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

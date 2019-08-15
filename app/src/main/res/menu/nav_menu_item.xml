@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_term"
+        android:icon="@drawable/account_card_details_outline"
+        android:title="@string/nav_term" />
+    <item
+        android:id="@+id/nav_value"
+        android:icon="@drawable/clipboard_list"
+        android:title="@string/nav_value" />
+    <item
+        android:id="@+id/nav_quotes"
+        android:icon="@drawable/format_quote_open"
+        android:title="@string/nav_quotes" />
+    <item
+        android:id="@+id/nav_scientist"
+        android:icon="@drawable/account_card_details_outline"
+        android:title="@string/nav_scientist" />
+    <item
+        android:id="@+id/nav_journal"
+        android:icon="@drawable/newspaper_variant_multiple_outline"
+        android:title="@string/nav_journal" />
+
+</menu>
