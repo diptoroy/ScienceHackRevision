@@ -6,5 +6,43 @@
     <string name="nav_journal">Journal</string>
     <string name="nav_term">Term</string>
 
+    <string name="Formula">Formula</string>
+    <string name="Features">Features</string>
+    <string name="Do_you_know">Do you know?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="j_title">We may have a basic form of sign language in common with chimpanzees</string>
+    <string name="j_detail">People seem to be able to understand gestures made by chimpanzees, suggesting the signals may be remnants of a basic sign language used by our last common ancestors</string>
+    <string name="j_date">2019-09-13T00:00:00Z</string>
+
+    <string name="termName">Gravity Law</string>
+    <string name="termDetails">Newton\'s law of universal gravitation states that every particle attracts every other particle in the universe with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers</string>
+    <string name="term_search">Search</string>
+    <string name="dayandnight">Day or Night</string>
+    <string name="quotesq">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>
+    <string name="quoteAuthor">- The Joker</string>
+    <string name="scientist_na">Name : Isaac Newton</string>
+    <string name="scientist_birth">Birthday : 4 Jan,1643</string>
+    <string name="scientist_country">Country : England</string>
+    <string name="scientist_field">Field</string>
+    <string name="scientist_field_name">Physics</string>
+    <string name="scientist_awards">Awards</string>
+    <string name="scientist_awards_name">Knight Bachelor</string>
+    <string name="scientist_death">Death : 31 Mar,1727</string>
+    <string name="scientist_books">Book : De per,De in</string>
+    <string name="scientist_works">Works : Many of the letters are lost, but it is clear that  was helpful, especially regarding   definition of Saturn. The publication of Newton discoveries led to controversies involving English natural philosopher Robert Hooke, Anthony Lucas, mathematical professor at Liege; Francis Line, a physician in , and many others. English astronomer and mathematician Edmond Halley attempted to mediate and get Newton to agree that Hooke deserved some credit for the invention of "the rule for the decrease of gravity being reciprocally as the squares of the distances from the centre"</string>
+    <string name="scientist_details">Details : Sir Isaac Newton PRS (25 December 1642 – 20 March 1726/27[a]) was an English mathematician, physicist, astronomer, theologian, and author (described in his own day as a "natural philosopher") who is widely recognised as one of the most influential scientists of all time, and a key figure in the scientific revolution. His book Mathematical Principles of Natural Philosophy), first published in 1687, laid the foundations of classical mechanics. Newton also made seminal contributions to optics, and shares credit with Gottfried Wilhelm Leibniz for developing the infinitesimal calculus.</string>
+
+    <string name="reference">Thanks all</string>
+    <string name="version">Version : 1.0</string>
+    <string name="dev">Developer : Adornment Campus</string>
+    <string name="contact_us">Keep Touch</string>
+    <string name="subject_mail">Subject</string>
+    <string name="message_message">Message</string>
+    <string name="send_mail">Send</string>
+    <string name="problem">Get in touch with us if you face any error and send your valuable thoughts.</string>
+    <string name="motto">Don\'t memorize anything</string>
 
 </resources>

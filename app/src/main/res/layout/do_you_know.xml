@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#0f0f0f"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:id="@+id/do_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="--> Do you know who is Dipto?"/>
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:id="@+id/do_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer : Dipto Roy is a student.ojko pijfpor ewfpihjpoiejpo9e ewpo jfpoi ewjf poojup9d  ofdjpo[ epoojf pojpofei o0kiew."/>
+        </LinearLayout>
+</LinearLayout>

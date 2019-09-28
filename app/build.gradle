@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.0"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
         applicationId "com.example.sciencehack"
         minSdkVersion 21
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -33,8 +33,26 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:17.0.0'
     implementation 'com.google.firebase:firebase-database:18.0.1'
     implementation 'com.firebaseui:firebase-ui-database:2.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation 'com.google.firebase:firebase-config:19.0.0'
 
     //Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Circle image view
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //Volley
+    implementation 'com.dubsmash.volley:library:2.0.1'
+
+    //Facebook Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+
+
+    //Admob Ads
+    implementation 'com.google.android.gms:play-services-ads:18.2.0'
+
+    //App rate
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
 }
 apply plugin: 'com.google.gms.google-services'
