@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.sciencehack.AdsModel;
@@ -42,6 +44,8 @@ public class QuotesActivity extends AppCompatActivity {
     public static final String ADS = AdsModel.BANNER_ADS;
 
     private InterstitialAd quotesInterstitialAd;
+    ProgressBar qu_progress;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +55,8 @@ public class QuotesActivity extends AppCompatActivity {
         toolbar_quotes.setTitle("Quotes");
         setSupportActionBar(toolbar_quotes);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        qu_progress = findViewById(R.id.qu_progressBar);
+        qu_progress.setVisibility(View.VISIBLE);
 
 
         qutoesRecyclerView = findViewById(R.id.quotes_recyclerView_id);
@@ -80,6 +86,7 @@ public class QuotesActivity extends AppCompatActivity {
                 quotesHolder = new QuotesHolder(getApplicationContext(),qObjects);
                 quotesHolder.notifyDataSetChanged();
                 qutoesRecyclerView.setAdapter(quotesHolder);
+                qu_progress.setVisibility(View.INVISIBLE);
             }
 
             @Override

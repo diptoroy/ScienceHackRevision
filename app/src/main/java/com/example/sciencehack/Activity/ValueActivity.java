@@ -7,6 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.sciencehack.AdsModel;
@@ -43,6 +45,8 @@ public class ValueActivity extends AppCompatActivity {
 
     private InterstitialAd valueInterstitialAd;
 
+    ProgressBar va_progress;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +56,8 @@ public class ValueActivity extends AppCompatActivity {
         value_toolbar.setTitle("Simple Values");
         setSupportActionBar(value_toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        va_progress = findViewById(R.id.va_progressBar);
+        va_progress.setVisibility(View.VISIBLE);
 
         valuerecyclerview = findViewById(R.id.value_recyclerView_id);
         valueList = new ArrayList<>();
@@ -80,6 +86,7 @@ public class ValueActivity extends AppCompatActivity {
                 valueHolder = new ValueHolder(getApplicationContext(),valueList);
                 valueHolder.notifyDataSetChanged();
                 valuerecyclerview.setAdapter(valueHolder);
+                va_progress.setVisibility(View.INVISIBLE);
 
             }
 

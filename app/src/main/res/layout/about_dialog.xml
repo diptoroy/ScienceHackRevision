@@ -51,7 +51,20 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"/>
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:id="@+id/rate"
+        android:text="Rate This App"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rate_button"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

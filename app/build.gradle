@@ -52,7 +52,5 @@ dependencies {
     //Admob Ads
     implementation 'com.google.android.gms:play-services-ads:18.2.0'
 
-    //App rate
-    implementation 'com.github.hotchemi:android-rate:1.0.1'
 }
 apply plugin: 'com.google.gms.google-services'

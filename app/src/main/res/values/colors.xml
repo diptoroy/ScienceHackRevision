@@ -8,4 +8,5 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorWhiteTransparent">#80ffffff</color>
     <color name="colorText">#11010A</color>
+    <color name="color_rate_btn">#C56363</color>
 </resources>

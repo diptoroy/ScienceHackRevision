@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:id="@+id/closeBtn"
             android:background="#ff8a65"
             android:textColor="#FFFFFF"

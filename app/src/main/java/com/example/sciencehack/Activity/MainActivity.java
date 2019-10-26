@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.example.sciencehack.Extra.ForceUpdateChecker;
 import com.example.sciencehack.Model.DoYou;
@@ -48,7 +50,6 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import hotchemi.android.rate.AppRate;
 
 public class MainActivity extends AppCompatActivity implements ForceUpdateChecker.OnUpdateNeededListener {
 
@@ -78,8 +79,6 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
     DatabaseReference fReference;
 
     Toolbar mainToolbar;
-    private AdView mAdView;
-    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -152,12 +151,6 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
 
         ForceUpdateChecker.with(this).onUpdateNeeded(this).check();
 
-        AppRate.with(this)
-                .setInstallDays(1)
-                .setLaunchTimes(3)
-                .setRemindInterval(2)
-                .monitor();
-        AppRate.showRateDialogIfMeetsConditions(this);
     }
 
     @Override
@@ -174,6 +167,17 @@ public class MainActivity extends AppCompatActivity implements ForceUpdateChecke
 
                 AlertDialog.Builder aBuilder = new AlertDialog.Builder(MainActivity.this);
                 View aView = getLayoutInflater().inflate(R.layout.about_dialog,null);
+                Button rate = aView.findViewById(R.id.rate);
+                rate.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        try{
+                            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("market://details?id="+getPackageName())));
+                        }catch (ActivityNotFoundException e){
+                            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id="+getPackageName())));
+                        }
+                    }
+                });
                 aBuilder.setView(aView);
                 AlertDialog ab = aBuilder.create();
                 ab.getWindow().getAttributes().windowAnimations = R.style.scale;
